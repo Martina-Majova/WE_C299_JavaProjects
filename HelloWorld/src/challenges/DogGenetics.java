@@ -8,8 +8,11 @@ import java.util.Scanner;
 
 public class DogGenetics {
 	
+	private static String initMessage = "Please enter name of your dog";
+	private static List<String> dogRaces = new ArrayList<>();
+
 	public void findGenetics() {
-		System.out.println("Please enter name of your dog");
+		System.out.println(initMessage);
 		Scanner scanner = new Scanner(System.in);
 		String dogName = scanner.nextLine();
 		
